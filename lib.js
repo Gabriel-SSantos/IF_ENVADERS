@@ -5,7 +5,9 @@ let altura = window.innerHeight
 let largura = window.innerWidth
 
 canvas.style.height = `${altura*0.85}px`
-//canvas.style.width = `${largura/2}px`
+if(largura < 600){
+    canvas.style.width = `${altura*(2/3)}`
+}
 
 //Essa classe é a junção de 4, teremos que dividir entre mães e filhas
 //Classe mãe (Precisa de um nome)
