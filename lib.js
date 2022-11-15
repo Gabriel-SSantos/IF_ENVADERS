@@ -2,7 +2,7 @@ let canvas = document.getElementById('canvas')
 let ctx = canvas.getContext('2d') 
 let main = document.getElementsByTagName('main')[0]
 
-let altura = document.body.clientHeight
+let altura = document.documentElement.clientHeight
 let largura = document.body.clientWidth
 canvas.style.height = `${altura * 0.85}px`
 
