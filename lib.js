@@ -9,15 +9,7 @@ canvas.style.height = `${altura * 0.85}px`
 if(largura < 600){
     canvas.style.width = `${largura}px`
 }
-/*
-if(altura > 600){
-    canvas.style.height = `520px`
-    canvas.style.width = `${1100/3}px`
-    if(altura > 900){
-        canvas.style.height = `850px`    
-    } 
-}
-*/
+
 //Essa classe é a junção de 4, teremos que dividir entre mães e filhas
 //Classe mãe (Precisa de um nome)
 //Classe de desenhosfixos(imagens de cenário)
