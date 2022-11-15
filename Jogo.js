@@ -9,6 +9,10 @@ let vida1 = new Player(40,10,30,30,0,'imagens/nave.png')
 let vida2 = new Player(70,10,30,30,0,'imagens/nave.png')
 let vida3 = new Player(100,10,30,30,0,'imagens/nave.png')
 
+if(largura < 600){
+    canvas.style.width = `${largura}`
+}
+
 function jogo(){
     //Chamada para os métodos de desenho 
     back.desenhar() 
@@ -147,7 +151,7 @@ function perder(vida){ // verificar se eu perdi todas as vidas
 }
 function ganhar(min,seg){ //verifica se ganhou
     if(min == 1 && seg == 30){ //Se sobrevivel até esse time
-        clearInterval(rodar) //Pausa o jogo
+        pausar() //Pausa o jogo
 
         //Coloca um texto na tela
         ctx.fillText('Ganhou (:', 150, 170) 
