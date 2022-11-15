@@ -55,9 +55,6 @@ function jogo(){
 
     ctx.fillText(`${minutos}:${segundos}:${miliSegundos}`,220,100)
     ctx.fillText(`Pontos: ${Nave.pnts}`,10,70) //texto que apresenta a quantdade de pontos
-    
-    ctx.fillText(`largura: ${largura}`,300,300)
-    ctx.fillText(`Altura: ${altura}`,300,400)
 
    perder(Nave.vida) // Função que verifica se a vida chegou em 0 (Player perdeu)
    ganhar(minutos,segundos) //Função que verifica se chegou em determinado tempo (Ganha quem sobreviver ao tempo estabelecido)
