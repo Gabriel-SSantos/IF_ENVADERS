@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Envades</title>
+    <style>
+    body{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        display: flex; 
+        flex-direction: column;
+    }
+    
+    #botoesConfiguracoes{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    </style>
+</head>
+<body>
+    <main> 
+        <section id="botoesConfiguracoes">    
+            <button onclick="jogar()"> JOGAR </button>
+            <button onclick="pausar()"> PAUSAR </button>
+            <button onclick="reiniciar()"> REINICIAR </button>
+        </section>
+       
+        <canvas id="canvas" height="900px" width="600px" style="border: solid;"></canvas> 
+        <section id="movimento" style="display:flex; justify-content: center;">
+            <button onclick="esquerda()">
+                <img src="imagens/bnt2.png" alt="esquerda">
+            </button>
+            <button onclick="direita()">
+                <img src="imagens/bnt.png" alt="direita">
+            </button>
+        </section>
+    </main>
+    
+    <script src="lib.js"></script>
+    <script src="Jogo.js"></script>
+</body>
+</html>
