@@ -6,6 +6,10 @@ let largura = document.body.clientWidth
 
 canvas.style.height = `${altura*0.85}px`
 
+if(largura < 600){
+    canvas.style.width = `${largura}px`
+}
+
 
 //Essa classe é a junção de 4, teremos que dividir entre mães e filhas
 //Classe mãe (Precisa de um nome)
