@@ -9,10 +9,6 @@ let vida1 = new Player(40,10,30,30,0,'imagens/nave.png')
 let vida2 = new Player(70,10,30,30,0,'imagens/nave.png')
 let vida3 = new Player(100,10,30,30,0,'imagens/nave.png')
 
-if(largura < 600){
-    canvas.style.width = `${largura}`
-}
-
 function jogo(){
     //Chamada para os métodos de desenho 
     back.desenhar() 
