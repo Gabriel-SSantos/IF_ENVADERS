@@ -1,10 +1,10 @@
 let canvas = document.getElementById('canvas') 
 let ctx = canvas.getContext('2d') 
 let main = document.getElementsByTagName('main')[0]
+
 let altura = document.body.clientHeight
 let largura = document.body.clientWidth
-
-canvas.style.height = `${altura*0.85}px`
+canvas.style.height = `${altura * 0.85}px`
 
 if(largura < 600){
     canvas.style.width = `${largura}px`
