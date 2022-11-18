@@ -57,7 +57,7 @@ function jogo(){
     ctx.fillText(`Pontos: ${Nave.pnts}`,10,70) //texto que apresenta a quantdade de pontos
 
    perder(Nave.vida) // Função que verifica se a vida chegou em 0 (Player perdeu)
-   ganhar(minutos,segundos) //Função que verifica se chegou em determinado tempo (Ganha quem sobreviver ao tempo estabelecido)
+   ganhar(minutos,segundos,limM,limS) //Função que verifica se chegou em determinado tempo (Ganha quem sobreviver ao tempo estabelecido)
 
     // Condições para desenhar as vidas na tela
     if (Nave.vida > 0){ 
@@ -144,8 +144,8 @@ function perder(vida){ // verificar se eu perdi todas as vidas
         ctx.fillText('' + Nave.pnts, 150, 280)
     }
 }
-function ganhar(min,seg){ //verifica se ganhou
-    if(min == 1 && seg == 30){ //Se sobrevivel até esse time
+function ganhar(min,seg,limM,limS){ //verifica se ganhou
+    if(min == limM && seg == limS){ //Se sobrevivel até esse time
         pausar() //Pausa o jogo
 
         //Coloca um texto na tela
