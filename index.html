@@ -10,12 +10,12 @@
         display: flex; 
         flex-direction: column;
         align-items: center;
-        background-color: black; 
+        background-color: gray; 
     }
     main{
         display: flex; 
         flex-direction: column;
-       /* background-image: url("imagens/background.jpg");*/
+        background-image: url("imagens/background.jpg");
     }
     button{
         background-color: rgba(47, 79, 79, 0);
@@ -36,7 +36,33 @@
         justify-content: center; 
         justify-content: space-between;
     }
-    
+    #SelecionarModo{
+        
+        margin-top: 300px;
+        margin-left: 50px;
+        color: rgb(0, 0, 0);
+        width: 400px;
+        
+        background-color: rgb(241, 213, 86);
+        border: solid;
+        border-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-align: center;
+    }
+    #SelecionarModo div{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    #SelecionarModo button{
+        background-color: rgba(240, 248, 255, 0.767);
+        color: black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px;
+        width: 100px;
+        height: 50px;
+    }
     </style>
 </head>
 <body>
@@ -46,7 +72,13 @@
             <button onclick="pausar()"> PAUSAR </button>
             <button onclick="reiniciar()"> REINICIAR </button>
         </section>
-       
+        <section id="SelecionarModo">
+            <p>Selecione o modo de jogo</p>
+            <div>
+                <button onclick="modoInfinito()">MODO INFINITO</button>
+                <button onclick="modoTempo()">MODO COM TEMPO</button>
+            </div>
+         </section>
         <canvas id="canvas" height="900px" width="600px" style="border: solid;"></canvas> 
         <section id="movimento">
             <button onclick="esquerda()">
@@ -59,6 +91,7 @@
     </main>
     
     <script src="lib.js"></script>
+    <script src="inicio.js"></script>
     <script src="Jogo.js"></script>
 </body>
 </html>
