@@ -73,3 +73,25 @@ class Player{
         
     }
 }
+
+class Telas{
+    constructor(pontoX,pontoY,largura,altura, forma,recorteX,recorteY,largRec,altgRec){
+        this.x = pontoX,
+        this.y = pontoY,
+        this.largura = largura,
+        this.altura = altura
+        this.imagem = new Image(),
+        this.imagem.src = forma,
+        this.recorteX = recorteX,
+        this.recorteY = recorteY,
+        this.larguraDoRecorte = largRec,
+        this.alturaraDoRecorte = altgRec
+    }
+    animação(i){
+        this.recorteX = i*this.larguraDoRecorte
+    }
+    desenha(){
+        ctx.drawImage(this.imagem,this.recorteX,this.recorteY,this.larguraDoRecorte,this.alturaraDoRecorte,this.x,this.y,this.largura,this.altura)
+    }
+}
+
