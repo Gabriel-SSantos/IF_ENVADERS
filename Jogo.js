@@ -104,6 +104,7 @@ function jogar(){ //Dá play no jogo
     if(!ativo){ //Se ele estiver desligado
         rodar = setInterval(jogo,100) //Começa a rodar o jogo e armazena a repetiçaõ numa variável, atualizando os frames a cada 10 milésimos de segundo (eu acho), 0,01 seg
         ativo = true // Coloca o jogo como ativo, caso contrário, poderíamos clicar em jogor e chamar a função muitas vezes fazendo com que ele inicie muitos processos e aumente a velocidade (vai pedir muitas atualizações de cena)
+        clearInterval(descanso)
     }
 }
 function pausar(){ //Pausa o jogo
