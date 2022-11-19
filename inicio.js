@@ -8,6 +8,8 @@ let telaDificuldade = document.getElementById("SelecionarModo")
 
 function modoTempo(){
     telaDificuldade.style.display = "none"
+    limM = 1
+    limS = 30
     descanso = setInterval(inicio,500)
 }
 function modoInfinito(){
